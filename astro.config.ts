@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig, passthroughImageService } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { StarlightConfig } from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,6 +22,7 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/nyanrus/noraneko',
 			},
+			
 			sidebar: [
 				{
 					label: "Build",
@@ -31,6 +33,7 @@ export default defineConfig({
 					autogenerate: { directory: 'tech' },
 				},
 			],
-		}),
+			favicon: "src/assets/icon_a_aq.svg",
+		} satisfies StarlightConfig),
 	],
 });
