@@ -22,7 +22,6 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/nyanrus/noraneko',
 			},
-			
 			sidebar: [
 				{
 					label: "Build",
@@ -33,7 +32,6 @@ export default defineConfig({
 					autogenerate: { directory: 'tech' },
 				},
 			],
-			favicon: "src/assets/icon_a_aq.svg",
 		} satisfies StarlightConfig),
 	],
 });
